@@ -11,14 +11,14 @@ let customLabel = "Rough Estimate (Days)";
 
   //activateButton
   activateButton.addEventListener("click", function() {
-    if (userExtensionActive) {
-      activateButton.value = "Activate";
-      userExtensionActive = false; 
-    } else {
-      userExtensionActive = true;
-      activateButton.value = "Deactivate";
-    }
-  });    
+      if (extensionActive) {
+        activateButton.value = "Activate";
+        userExtensionActive = false; 
+      } else {
+        userExtensionActive = true;
+        activateButton.value = "Deactivate"; 
+      }
+    });   
     
   //setButton
   setButton.addEventListener("click", function() {
