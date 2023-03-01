@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Polarion Editer</title>
+    <script type="module" src="main.js"></script>
+    <style>
+      body body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+input[type="text"],
+input[type="button"] {
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  margin-bottom: 2px;
+}
+
+input[type="button"] {
+  background-color: #4CAF50;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 10%;
+}
+
+input[type="button"]:hover {
+  background-color: #4CAF50;
+}
+
+    </style>
+  </head>
+  <body>
+    <h2>Polarion Estimate Editor</h2>
+    <p id="domaincheckresult"></p>
+    <input type="button" id="activate" value="Activate">
+    <h3>Set custom text</h3>
+    <input type="text" id="customlabel" name="customlabel" />
+    <input type="button" id="set" value="Set" />
+    <h3>Set the domain in here</h3>
+    <h4>Not the url<a href="https://cdn.discordapp.com/attachments/1078570597367418930/1080106466595307590/Untitled.png" target="_blank">(Only the domain)</a>.</h4>
+    <input type="text" id="sitename" name="sitename" />
+    <input type="button" id="setSiteName" value="Set"/>
+
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "Polarion Estimate Editor",
+  "version": "0.1.6",
+  "description": "This is an extension to edit the estimate string from Polarian",
+  "manifest_version": 3,
+  "author": "b0tcreati0n.carrd.co",
+  "permissions": [
+    "background",
+    "webRequest",
+    "activeTab",
+    "pageCapture",
+    "unlimitedStorage",
+    "tabs"
+  ],
+  "minimum_chrome_version": "93",
+  "background": {
+    "service_worker": "js/background.js",
+    "type": "module"
+  },
+  
+  "action": {
+    "default_icon": "pictures/icon128.png",
+    "default_popup": "popup.html",
+    "default_title": "Polarion Estimate Editor"
+  }
+}
