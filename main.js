@@ -19,17 +19,19 @@ activateButton.addEventListener("click", function() {
   }
 });   
     
-//setButton
+// setButton
 setButton.addEventListener("click", function() {
   customLabel = customLabelInput.value;
 });
 
-//setsiteUrl
-setButton.addEventListener("click", function() {
+// setSiteUrl button
+let setSiteUrlButton = document.querySelector('#setsiteUrl');
+setSiteUrlButton.addEventListener("click", function() {
   let newSiteUrl = siteUrlInput.value;
   console.log(`Setting siteUrl to: ${newSiteUrl}`);
   siteUrl = newSiteUrl;
 });
+
 
 //export statements
 export {userExtensionActive};

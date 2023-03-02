@@ -1,5 +1,4 @@
 let extensionActive = false;
-import { userExtensionActive } from './main.js';
 
 chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
   if (changeInfo.status == "complete") {
@@ -18,11 +17,10 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.type === 'setCustomLabel') {
     console.log(`Setting custom label to: ${message.customLabel}`);
-    chrome.tabs.executeScript({
-      code: `document.getElementById("site-name-input").value = "${message.customLabel}"`
-    });
+    document.getElementById("site-name-input").value = message.customLabel;
   }
 });
+
 
 //Debug logs
 setInterval(function () {
