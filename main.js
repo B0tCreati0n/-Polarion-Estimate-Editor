@@ -22,7 +22,7 @@ fetch('config.json')
 
   //activateButton
     activateButton.addEventListener("click", function() {
-      if (extensionActive) {
+      if (userExtensionActive) {
         activateButton.value = "Activate";
         userExtensionActive = false; 
       } else {
