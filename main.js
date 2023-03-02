@@ -35,9 +35,6 @@ try {
     customLabel = customLabelInput.value;
   });
 
-  //siteUrlInput
-  siteUrlInput.value = siteUrl;
-
   //setsiteUrl
   let setsiteUrlButton = document.querySelector('#setsiteUrl');
   setsiteUrlButton.addEventListener("click", function() {
