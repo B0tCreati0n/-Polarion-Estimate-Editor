@@ -1,5 +1,5 @@
 let siteName = "";
-let userExtensionActive = true;
+let userExtensionActive = false;
 import {customLabel} from './config.js';
 import { extensionActive } from "./background";
 
