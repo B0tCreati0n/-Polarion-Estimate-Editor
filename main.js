@@ -5,8 +5,8 @@ import {customLabel} from './config.js';
 //get the config file things 
 try {
   const config = require('./config');
-  const siteUrl = config.siteUrl;
-  const customLabel = config.customLabel;
+  let siteUrl = config.siteUrl;
+  let customLabel = config.customLabel;
   console.log(`Loaded config: siteUrl=${siteUrl}, customLabel=${customLabel}`);
 } catch (error) {
   console.error('Failed to load config:', error);
