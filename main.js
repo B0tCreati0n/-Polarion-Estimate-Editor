@@ -4,7 +4,7 @@ import {customLabel} from './config.js';
 
 //get the config file things 
 try {
-  const config = require('./config');
+  const config = import('./config');
   let siteUrl = config.siteUrl;
   let customLabel = config.customLabel;
   console.log(`Loaded config: siteUrl=${siteUrl}, customLabel=${customLabel}`);
