@@ -37,8 +37,8 @@ let siteUrlInput = document.querySelector('#siteUrl');
 
   //setsiteUrl
   setButton.addEventListener("click", function() {
-    let newCustomLabel = customLabelInput.value;
-    console.log(`Setting custom label to: ${newCustomLabel}`);
+    let newSiteUrl = siteUrlInput.value;
+    console.log(`Setting siteUrl to: ${newSiteUrl}`);
   });
   
 
