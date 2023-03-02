@@ -8,31 +8,31 @@ let setButton = document.querySelector('#set');
 let customLabelInput = document.querySelector('#customlabel');
 let siteUrlInput = document.querySelector('#siteUrl');
 
-  //activateButton
-    activateButton.addEventListener("click", function() {
-      if (userExtensionActive) {
-        activateButton.value = "Activate";
-        userExtensionActive = false; 
-      } else {
-        userExtensionActive = true;
-        activateButton.value = "Deactivate"; 
-      }
-    });   
+//activateButton
+activateButton.addEventListener("click", function() {
+  if (userExtensionActive) {
+    activateButton.value = "Activate";
+    userExtensionActive = false; 
+  } else {
+    userExtensionActive = true;
+    activateButton.value = "Deactivate"; 
+  }
+});   
     
-  //setButton
-  setButton.addEventListener("click", function() {
-    customLabel = customLabelInput.value;
-  });
+//setButton
+setButton.addEventListener("click", function() {
+  customLabel = customLabelInput.value;
+});
 
-  //setsiteUrl
-  setButton.addEventListener("click", function() {
-    let newSiteUrl = siteUrlInput.value;
-    console.log(`Setting siteUrl to: ${newSiteUrl}`);
-  });
-  
+//setsiteUrl
+setButton.addEventListener("click", function() {
+  let newSiteUrl = siteUrlInput.value;
+  console.log(`Setting siteUrl to: ${newSiteUrl}`);
+  siteUrl = newSiteUrl;
+});
 
-//export satements
- export {userExtensionActive};
+//export statements
+export {userExtensionActive};
 
 //Debug logs
 setInterval(function() {
