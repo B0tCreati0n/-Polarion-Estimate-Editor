@@ -25,3 +25,8 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
     }
   }
 });
+
+//Debug logs
+setInterval(function() {
+  console.log(extensionActive);
+}, 5000);

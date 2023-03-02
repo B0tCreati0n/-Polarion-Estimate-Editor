@@ -49,8 +49,5 @@ try {
 
 //Debug logs
 setInterval(function() {
-  console.log(siteUrl);
-  console.log(extensionActive);
   console.log(userExtensionActive);
-  console.log(customLabel);
 }, 5000);
