@@ -1,9 +1,7 @@
-let siteUrl = "";
-let userExtensionActive = false;
-import {customLabel} from './config.js';
-
-//get the config file things 
+//get the config file things
 import { siteUrl, customLabel } from './config.js';
+let siteUrl = config.siteUrl;
+let userExtensionActive = false;
 
 //all buttons code
 let activateButton = document.querySelector('#activate');
