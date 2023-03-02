@@ -62,7 +62,7 @@ fetch('config.json')
   };
   
 
-//Debug log
+//Debug logs
 setInterval(function() {
   console.log(siteName);
   console.log(extensionActive);
