@@ -4,7 +4,7 @@ import {customLabel} from './config.js';
 import { extensionActive } from "./background.js";
 
 fetch('config.json')
-  .then(response => response.json())
+  .then(response => response.js())
   .then(data => {
     siteName = data.siteName;
     customLabel = data.customLabel;
