@@ -1,8 +1,4 @@
-import { siteUrl } from "./config.js";
-import { userExtensionActive } from "./main.js"
-import { customLabel } from "./config.js";
-
-chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
   if (changeInfo.status == "complete") {
     console.log(tab.url);
     if (tab.url.indexOf(siteUrl) != -1) {
@@ -12,7 +8,6 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
       extensionActive = false;
     }
   }
-});
 
   //fetch "siteUrl" and replace with customLabel
   if (extensionActive && userExtensionActive) {
@@ -28,5 +23,5 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     } catch (error) {
       console.error("Error fetching website:", error);
     }
-  };
-
+  }
+});

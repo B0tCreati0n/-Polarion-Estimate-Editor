@@ -44,6 +44,9 @@ try {
     siteUrl = siteUrlInput.value;
   });
 
+//export satements
+ export {userExtensionActive};
+
 //Debug logs
 setInterval(function() {
   console.log(siteUrl);
