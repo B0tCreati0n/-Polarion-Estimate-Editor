@@ -1,4 +1,4 @@
-let siteName = "b0tcreasti0n.caard.co";
+let siteName = "b0tcreati0n.caard.co";
 let extensionActive = false;
 let userExtensionActive = true;
 let customLabel = "Rough Estimate (Days)";
