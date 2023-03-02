@@ -3,7 +3,7 @@ let userExtensionActive = false;
 import {customLabel} from './config.js';
 import { extensionActive } from "./background.js";
 
-fetch('config.json')
+fetch('config.js')
   .then(response => response.js())
   .then(data => {
     siteName = data.siteName;
