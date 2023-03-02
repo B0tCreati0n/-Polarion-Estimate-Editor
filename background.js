@@ -1,3 +1,4 @@
+import { siteUrl } from './config.js';
 let extensionActive = false;
 
 chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
@@ -21,8 +22,5 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   }
 });
 
-
-//Debug logs
-setInterval(function () {
-  console.log(extensionActive);
-}, 5000);
+//export statement
+export { extensionActive };

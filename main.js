@@ -1,6 +1,6 @@
-//get the config file things
-import { siteUrl, customLabel } from './config.js';
+import { siteUrl } from './config.js';
 let userExtensionActive = false;
+let customLabel = "Rough Estimate (Days)";
 
 //all buttons code
 let activateButton = document.querySelector('#activate');
@@ -29,14 +29,8 @@ let setSiteUrlButton = document.querySelector('#setsiteUrl');
 setSiteUrlButton.addEventListener("click", function() {
   let newSiteUrl = siteUrlInput.value;
   console.log(`Setting siteUrl to: ${newSiteUrl}`);
-  siteUrl = newSiteUrl;
 });
 
 
 //export statements
-export {userExtensionActive};
-
-//Debug logs
-setInterval(function() {
-  console.log(userExtensionActive);
-}, 5000);
+export { userExtensionActive, customLabel };
