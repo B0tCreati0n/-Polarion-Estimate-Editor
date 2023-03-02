@@ -1,7 +1,7 @@
 let siteName = "b0tcreati0n.caard.co";
-let extensionActive = false;
 let userExtensionActive = true;
 let customLabel = "Rough Estimate (Days)";
+import { extensionActive } from "./background";
 
   //all buttons code
   let activateButton = document.querySelector('#activate');
