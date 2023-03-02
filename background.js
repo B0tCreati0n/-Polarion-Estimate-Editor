@@ -1,3 +1,5 @@
+let extensionActive = false;
+
 chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
   if (changeInfo.status == "complete") {
     console.log(tab.url);
