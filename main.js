@@ -3,16 +3,16 @@ let userExtensionActive = false;
 import {customLabel} from './config.js';
 import { extensionActive } from "./background.js";
 
-fetch('config.js')
-  .then(response => response.js())
-  .then(data => {
-    siteName = data.siteName;
-    customLabel = data.customLabel;
-    console.log(`Loaded config: siteName=${siteName}, customLabel=${customLabel}`);
-  })
-  .catch(error => {
-    console.error('Failed to load config:', error);
-  });
+//get the config file things 
+try {
+  const config = require('./config');
+  const siteName = config.siteName;
+  const customLabel = config.customLabel;
+  console.log(`Loaded config: siteName=${siteName}, customLabel=${customLabel}`);
+} catch (error) {
+  console.error('Failed to load config:', error);
+}
+
 
   //all buttons code
   let activateButton = document.querySelector('#activate');
@@ -44,23 +44,6 @@ fetch('config.js')
   setSiteNameButton.addEventListener("click", function() {
     siteName = siteNameInput.value;
   });
-
-  //fetch "siteName" and replace with customLabel
-  if (extensionActive && userExtensionActive) {
-    try {
-      const response = await fetch(siteName);
-      const html = await response.text();
-      if (html.includes('Rough Estimated (Days)')) {
-        console.log("FOUND Rough Estimated (Days)");
-        document.getElementById("site-name-input").value = customLabel;
-      } else {
-        console.log("did NOT find Rough Estimated (Days)");
-      }
-    } catch (error) {
-      console.error("Error fetching website:", error);
-    }
-  };
-  
 
 //Debug logs
 setInterval(function() {
