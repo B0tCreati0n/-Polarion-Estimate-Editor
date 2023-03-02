@@ -3,15 +3,7 @@ let userExtensionActive = false;
 import {customLabel} from './config.js';
 
 //get the config file things 
-try {
-  const config = import('./config');
-  let siteUrl = config.siteUrl;
-  let customLabel = config.customLabel;
-  console.log(`Loaded config: siteUrl=${siteUrl}, customLabel=${customLabel}`);
-} catch (error) {
-  console.error('Failed to load config:', error);
-}
-
+import { siteUrl, customLabel } from './config.js';
 
 //all buttons code
 let activateButton = document.querySelector('#activate');
