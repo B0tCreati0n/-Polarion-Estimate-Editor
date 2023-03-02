@@ -1,7 +1,6 @@
 let siteName = "";
 let userExtensionActive = false;
 import {customLabel} from './config.js';
-import { extensionActive } from "./background.js";
 
 //get the config file things 
 try {
