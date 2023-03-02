@@ -1,11 +1,11 @@
-import { siteName } from "./config.js";
+import { siteUrl } from "./config.js";
 import { userExtensionActive } from "./main.js"
 import { customLabel } from "./config.js";
 
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   if (changeInfo.status == "complete") {
     console.log(tab.url);
-    if (tab.url.indexOf(siteName) != -1) {
+    if (tab.url.indexOf(siteUrl) != -1) {
       extensionActive = true;
     }
     else {
@@ -14,10 +14,10 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   }
 });
 
-  //fetch "siteName" and replace with customLabel
+  //fetch "siteUrl" and replace with customLabel
   if (extensionActive && userExtensionActive) {
     try {
-      const response = await fetch(siteName);
+      const response = await fetch(siteUrl);
       const html = await response.text();
       if (html.includes('Rough Estimated (Days)')) {
         console.log("FOUND Rough Estimated (Days)");

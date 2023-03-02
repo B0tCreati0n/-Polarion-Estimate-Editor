@@ -1,13 +1,13 @@
-let siteName = "";
+let siteUrl = "";
 let userExtensionActive = false;
 import {customLabel} from './config.js';
 
 //get the config file things 
 try {
   const config = require('./config');
-  const siteName = config.siteName;
+  const siteUrl = config.siteUrl;
   const customLabel = config.customLabel;
-  console.log(`Loaded config: siteName=${siteName}, customLabel=${customLabel}`);
+  console.log(`Loaded config: siteUrl=${siteUrl}, customLabel=${customLabel}`);
 } catch (error) {
   console.error('Failed to load config:', error);
 }
@@ -17,7 +17,7 @@ try {
   let activateButton = document.querySelector('#activate');
   let setButton = document.querySelector('#set');
   let customLabelInput = document.querySelector('#customlabel');
-  let siteNameInput = document.querySelector('#sitename');
+  let siteUrlInput = document.querySelector('#siteUrl');
 
   //activateButton
     activateButton.addEventListener("click", function() {
@@ -35,18 +35,18 @@ try {
     customLabel = customLabelInput.value;
   });
 
-  //siteNameInput
-  siteNameInput.value = siteName;
+  //siteUrlInput
+  siteUrlInput.value = siteUrl;
 
-  //setSiteName
-  let setSiteNameButton = document.querySelector('#setSiteName');
-  setSiteNameButton.addEventListener("click", function() {
-    siteName = siteNameInput.value;
+  //setsiteUrl
+  let setsiteUrlButton = document.querySelector('#setsiteUrl');
+  setsiteUrlButton.addEventListener("click", function() {
+    siteUrl = siteUrlInput.value;
   });
 
 //Debug logs
 setInterval(function() {
-  console.log(siteName);
+  console.log(siteUrl);
   console.log(extensionActive);
   console.log(userExtensionActive);
   console.log(customLabel);

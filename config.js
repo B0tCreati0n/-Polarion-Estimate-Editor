@@ -1,3 +1,3 @@
-let siteName = "b0tcreati0n.caard.co";
+let siteUrl = "b0tcreati0n.caard.co";
 let customLabel = "Rough Estimate (Days)";
-export {siteName, customLabel};
+export {siteUrl, customLabel};
