@@ -13,11 +13,11 @@ try {
 }
 
 
-  //all buttons code
-  let activateButton = document.querySelector('#activate');
-  let setButton = document.querySelector('#set');
-  let customLabelInput = document.querySelector('#customlabel');
-  let siteUrlInput = document.querySelector('#siteUrl');
+//all buttons code
+let activateButton = document.querySelector('#activate');
+let setButton = document.querySelector('#set');
+let customLabelInput = document.querySelector('#customlabel');
+let siteUrlInput = document.querySelector('#siteUrl');
 
   //activateButton
     activateButton.addEventListener("click", function() {
@@ -36,10 +36,12 @@ try {
   });
 
   //setsiteUrl
-  let setsiteUrlButton = document.querySelector('#setsiteUrl');
-  setsiteUrlButton.addEventListener("click", function() {
-    siteUrl = siteUrlInput.value;
+  setButton.addEventListener("click", function() {
+    let newCustomLabel = customLabelInput.value;
+    // Use the new variable instead of reassigning the constant
+    console.log(`Setting custom label to: ${newCustomLabel}`);
   });
+  
 
 //export satements
  export {userExtensionActive};
