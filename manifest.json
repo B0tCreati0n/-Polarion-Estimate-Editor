@@ -16,7 +16,7 @@
      "128": "pictures/icon128.png" },
   "minimum_chrome_version": "93",
   "background": {
-    "service_worker": "js/background.js",
+    "service_worker": "background.js",
     "type": "module"
   },
   
