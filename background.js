@@ -1,4 +1,4 @@
-import {siteName} from "./main.js";
+import {siteName} from "./config.js";
 
 let extensionActive = false;
 
