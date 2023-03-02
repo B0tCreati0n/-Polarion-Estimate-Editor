@@ -12,10 +12,12 @@ let siteUrlInput = document.querySelector('#siteUrl');
 activateButton.addEventListener("click", function() {
   if (userExtensionActive) {
     activateButton.value = "Activate";
-    userExtensionActive = false; 
+    userExtensionActive = false;
+    console.log(`Extention is now active`);
   } else {
     userExtensionActive = true;
-    activateButton.value = "Deactivate"; 
+    activateButton.value = "Deactivate";
+    console.log(`Extention is now active`); 
   }
 });   
     
