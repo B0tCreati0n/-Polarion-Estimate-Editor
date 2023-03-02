@@ -1,7 +1,18 @@
-let siteName = "b0tcreati0n.caard.co";
+let siteName = "";
 let userExtensionActive = true;
-let customLabel = "Rough Estimate (Days)";
+let customLabel = "";
 import { extensionActive } from "./background";
+
+fetch('config.json')
+  .then(response => response.json())
+  .then(data => {
+    siteName = data.siteName;
+    customLabel = data.customLabel;
+    console.log(`Loaded config: siteName=${siteName}, customLabel=${customLabel}`);
+  })
+  .catch(error => {
+    console.error('Failed to load config:', error);
+  });
 
   //all buttons code
   let activateButton = document.querySelector('#activate');
