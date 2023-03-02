@@ -1,4 +1,3 @@
-import { siteUrl } from './config.js';
 let userExtensionActive = false;
 let customLabel = "Rough Estimate (Days)";
 
@@ -21,12 +20,13 @@ activateButton.addEventListener("click", function() {
   }
 });   
     
-// setButton
+// set customLabel button
 setButton.addEventListener("click", function() {
   customLabel = customLabelInput.value;
+  console.log(`Custom label has been set to: ${customLabel}`);
 });
 
-// setSiteUrl button
+// set siteUrl button
 let setSiteUrlButton = document.querySelector('#setsiteUrl');
 setSiteUrlButton.addEventListener("click", function() {
   let newSiteUrl = siteUrlInput.value;
