@@ -21,7 +21,7 @@ fetch('config.json')
   let siteNameInput = document.querySelector('#sitename');
 
   //activateButton
-  activateButton.addEventListener("click", function() {
+    activateButton.addEventListener("click", function() {
       if (extensionActive) {
         activateButton.value = "Activate";
         userExtensionActive = false; 
