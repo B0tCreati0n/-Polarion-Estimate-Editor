@@ -3,7 +3,7 @@
   "version": "0.1.6",
   "description": "This is an extension to edit the estimate string from Polarian",
   "manifest_version": 3,
-  "author": "b0tcreati0n.carrd.co",
+  "author": "Noah G. Nielsen | website: b0tcreati0n.carrd.co",
   "permissions": [
     "background",
     "webRequest",
