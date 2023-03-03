@@ -5,8 +5,7 @@ Real time update: https://drive.google.com/drive/folders/10AOWq-s-hsVydLS4nGR9D5
 Todo:
 
 Errors:
-url grabber comes with undefined
-
+no known errors
 -------------
 Functions:
 1: Settings has been changede notification
