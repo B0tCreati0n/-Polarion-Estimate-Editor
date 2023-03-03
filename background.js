@@ -1,3 +1,4 @@
+console.log(chrome)
 import { siteUrl } from './config.js';
 let extensionActive = false;
 

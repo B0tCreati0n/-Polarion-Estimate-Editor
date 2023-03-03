@@ -5,7 +5,7 @@ if (userExtensionActive && extensionActive) {
     if (message.type === 'setCustomLabel' && userExtensionActive && extensionActive) {
       console.log(`Setting custom label to: ${message.customLabel}`);
       customLabel = message.customLabel;
-      document.body.innerText = document.body.innerText.replace(/Rough Estimate \(Days\)/gi, customLabel);
+      document.body.innerText = document.body.innerText.replace(/Example Domain/gi, customLabel);
     }
   });
 }
