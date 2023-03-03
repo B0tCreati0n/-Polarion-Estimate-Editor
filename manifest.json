@@ -9,12 +9,12 @@
     "webRequest",
     "activeTab",
     "pageCapture",
-    "unlimitedStorage",
+    "storage",
     "tabs",
     "scripting"
   ],
   "host_permissions": [
-   "https://*.example.com/"
+   "https://example.com/"
   ],
   "icons": {
      "128": "pictures/icon128.png" },
