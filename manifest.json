@@ -10,7 +10,8 @@
     "activeTab",
     "pageCapture",
     "unlimitedStorage",
-    "tabs"
+    "tabs",
+    "scripting"
   ],
   "icons": {
      "128": "pictures/icon128.png" },
