@@ -1,4 +1,3 @@
-console.log(chrome)
 import { siteUrl } from './config.js';
 let extensionActive = false;
 
@@ -7,8 +6,9 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
     console.log(tab.url);
     if (tab.url.indexOf(siteUrl) != -1) {
       extensionActive = true;
-      chrome.tabs.executeScript(tabId, {
-        file: 'content.js'
+      chrome.scripting.executeScript({
+        target: {tabId: tabId},
+        files: ['content.js']
       });
     } else {
       extensionActive = false;
