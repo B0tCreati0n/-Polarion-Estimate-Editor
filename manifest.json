@@ -13,6 +13,9 @@
     "tabs",
     "scripting"
   ],
+  "host_permissions": [
+   "https://*.example.com/"
+  ],
   "content_scripts": [
     {
       "matches": [
