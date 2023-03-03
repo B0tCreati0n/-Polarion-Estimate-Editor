@@ -1,4 +1,7 @@
-import { userExtensionActive, extensionActive, customTextString } from './config.js';
+import { customTextString } from './config.js';
+import { extensionActive } from './background.js';
+import { userExtensionActive } from './main.js';
+
 
 if (userExtensionActive && extensionActive) {
   chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
