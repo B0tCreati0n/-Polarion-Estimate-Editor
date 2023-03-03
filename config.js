@@ -1,4 +1,2 @@
-let customTextString = "Rough Estimate (Days)";
-let siteUrl = "example.com";
-export { customTextString };
-export { siteUrl };
+export let customTextString = "Rough Estimate (Days)";
+export let siteUrl = "example.com";
