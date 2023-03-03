@@ -16,16 +16,6 @@
   "host_permissions": [
    "https://*.example.com/"
   ],
-  "content_scripts": [
-    {
-      "matches": [
-        "https://example.com/*"
-      ],
-      "js": [
-        "content.js"
-      ]
-    }
-  ],
   "icons": {
      "128": "pictures/icon128.png" },
   "minimum_chrome_version": "93",
