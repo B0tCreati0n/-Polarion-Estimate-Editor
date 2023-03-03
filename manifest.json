@@ -13,15 +13,22 @@
     "tabs",
     "scripting"
   ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://example.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
   "icons": {
      "128": "pictures/icon128.png" },
   "minimum_chrome_version": "93",
   "background": {
     "service_worker": "background.js",
-    "type": "module",
-    "scripts": [
-      "background.js"
-    ]
+    "type": "module"
   },
   
   "action": {
