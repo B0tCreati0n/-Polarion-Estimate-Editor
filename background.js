@@ -17,9 +17,9 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
 });
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  if (message.type === 'setCustomLabel') {
-    console.log(`Setting custom label to: ${message.customLabel}`);
-    document.getElementById("site-name-input").value = message.customLabel;
+  if (message.type === 'setcustomTextString') {
+    console.log(`Setting custom label to: ${message.customTextString}`);
+    document.getElementById("site-name-input").value = message.customTextString;
   }
 });
 

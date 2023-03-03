@@ -1,3 +1,3 @@
 let siteUrl = "example.com";
-let customLabel = "Rough Estimate (Days)";
-export { siteUrl, customLabel };
+let customTextString = "Rough Estimate (Days)";
+export { siteUrl, customTextString };

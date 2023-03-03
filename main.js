@@ -1,10 +1,10 @@
 let userExtensionActive = false;
-let customLabel = "Rough Estimate (Days)";
+let customTextString = "Rough Estimate (Days)";
 
 //all buttons code
 let activateButton = document.querySelector('#activate');
 let setButton = document.querySelector('#set');
-let customLabelInput = document.querySelector('#customlabel');
+let customTextStringInput = document.querySelector('#customTextString');
 let siteUrlInput = document.querySelector('#siteUrl');
 
 //activateButton
@@ -20,10 +20,10 @@ activateButton.addEventListener("click", function() {
   }
 });   
     
-// set customLabel button
+// set customTextString button
 setButton.addEventListener("click", function() {
-  customLabel = customLabelInput.value;
-  console.log(`Custom label has been set to: ${customLabel}`);
+  customTextString = customTextStringInput.value;
+  console.log(`Custom label has been set to: ${customTextString}`);
 });
 
 // set siteUrl button
@@ -35,4 +35,4 @@ setSiteUrlButton.addEventListener("click", function() {
 
 
 //export statements
-export { userExtensionActive, customLabel };
+export { userExtensionActive, customTextString };
