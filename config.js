@@ -1,4 +1,4 @@
-let siteUrl = "example.com";
 let customTextString = "Rough Estimate (Days)";
+let siteUrl = "example.com";
 export { customTextString };
 export { siteUrl };
