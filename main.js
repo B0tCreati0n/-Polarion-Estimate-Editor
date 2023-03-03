@@ -33,6 +33,5 @@ setSiteUrlButton.addEventListener("click", function() {
   console.log(`Setting siteUrl to: ${newSiteUrl}`);
 });
 
-
 //export statements
 export { userExtensionActive, customTextString };

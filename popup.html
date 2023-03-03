@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Polarion Editer</title>
+    <title>Polarion Editor</title>
     <script type="module" src="./config.js"></script>
     <script type="module" src="./main.js"></script>
     <script type="module" src="./background.js"></script>
     <script type="module" src="./content.js"></script>
 
     <style>
-      body body {
-  font-family: Arial, sans-serif;
+      body {
+        font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -66,9 +66,10 @@ input[type="button"]:hover {
     <h3>Set custom text</h3>
     <input type="text" id="customTextString" name="customTextString" />
     <input type="button" id="set" value="Set" />
-    <h3>Set the domain in here</h3>
-    <h4>Not the url<a href="https://cdn.discordapp.com/attachments/1078570597367418930/1080106466595307590/Untitled.png" target="_blank">(Only the domain)</a>.</h4>
+    <h3>Set the domain here</h3>
+    <h4>Not the URL<a href="https://cdn.discordapp.com/attachments/1078570597367418930/1080106466595307590/Untitled.png" target="_blank">(Only the domain)</a>.</h4>
     <input type="text" id="siteUrl" name="siteUrl" />
-    <input type="button" id="setsiteUrl" value="Set"/>
+    <input type="button" id="setsiteUrl" value="Set" />
+    <script type="module" src="./popup.js"></script>
   </body>
 </html>
